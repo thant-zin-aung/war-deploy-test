@@ -12,4 +12,10 @@ public class TestController {
     public ResponseEntity<String> test() {
         return ResponseEntity.ok("All functionality work...");
     }
+
+    @GetMapping("/telegram/webhook/handler")
+    public ResponseEntity<String> telegramWebhookHandler() {
+        System.out.println("Webhook works...");
+        return ResponseEntity.ok("Telegram webhook works fine...");
+    }
 }
